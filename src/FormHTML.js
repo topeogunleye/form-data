@@ -37,7 +37,14 @@ export default function FormHTML() {
             </div>
           </div>
           <div className="mt-5 md:mt-0 md:col-span-2">
-            <form action="POST" method="POST" data-netlify="true" onSubmit="submit">
+            <form
+              action="POST"
+              method="POST"
+              data-netlify="true"
+              onSubmit="submit"
+              name="contact v2"
+            >
+              <input type="hidden" name="form-name" value="contact v2" />
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5 bg-white sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
