@@ -12,11 +12,11 @@ export default function FormHTML() {
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <h3 className="text-lg font-medium leading-6 text-gray-900">
-                Personal Information
+                Ilana Omo Oodua Professionals
               </h3>
               <p className="mt-1 text-sm text-gray-600">
-                This information will be displayed publicly so be careful what
-                you share.
+                This information will not be displayed publicly.It will be
+                seriously guarded and protected.
               </p>
             </div>
           </div>
@@ -76,6 +76,55 @@ export default function FormHTML() {
                         className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
+
+                    <div className="col-span-6 sm:col-span-3">
+                      <label
+                        htmlFor="country"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        State
+                      </label>
+                      <select
+                        id="country"
+                        name="country"
+                        autoComplete="country"
+                        className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                      >
+                        <option>Lagos</option>
+                        <option>Ogun</option>
+                        <option>Oyo</option>
+                        <option>Osun</option>
+                        <option>Ekiti</option>
+                        <option>Ondo</option>
+                      </select>
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-2">
+                      <span className="mt-1 text-gray-700 block text-sm font-medium">
+                        Gender
+                      </span>
+                      <div className="mt-2">
+                        <label className="inline-flex items-center">
+                          <input
+                            type="radio"
+                            className="form-radio"
+                            name="gender"
+                            defaultValue="Male"
+                          />
+                          <span className="ml-2">Male</span>
+                        </label>
+                        <label className="inline-flex items-center ml-6">
+                          <input
+                            type="radio"
+                            className="form-radio"
+                            name="gender"
+                            defaultValue="female"
+                          />
+                          <span className="ml-2">Female</span>
+                        </label>
+                      </div>
+                    </div>
+
                     <div>
                       <input
                         type="hidden"
@@ -127,6 +176,21 @@ export default function FormHTML() {
                         Comma seperated list of yours skills. URLs are
                         hyperlinked.
                       </p>
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                      <label
+                        htmlFor="number"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Phone Number
+                      </label>
+                      <input
+                        type="number"
+                        name="number"
+                        id="number"
+                        className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                      />
                     </div>
                   </div>
                 </div>
