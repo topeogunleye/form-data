@@ -1,4 +1,3 @@
-
 export default function FormHTML() {
   return (
     <>
@@ -16,12 +15,17 @@ export default function FormHTML() {
                 Personal Information
               </h3>
               <p className="mt-1 text-sm text-gray-600">
-              This information will be displayed publicly so be careful what you share.
+                This information will be displayed publicly so be careful what
+                you share.
               </p>
             </div>
           </div>
           <div className="mt-5 md:mt-0 md:col-span-2">
-            <form action="https://formsubmit.co/topeogunleye1@gmail.com" method="POST" data-netlify="true">
+            <form
+              action="https://formsubmit.co/topeogunleye1@gmail.com"
+              method="POST"
+              data-netlify="true"
+            >
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5 bg-white sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
@@ -73,7 +77,11 @@ export default function FormHTML() {
                       />
                     </div>
                     <div>
-                    <input type="hidden" name="_next" value="https://formsprofessional.netlify.app/thankyou"/>
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="https://formsprofessional.netlify.app/thankyou"
+                      />
                     </div>
 
                     <div className="col-span-6 sm:col-span-3">
@@ -97,7 +105,6 @@ export default function FormHTML() {
                         Your Profession.
                       </p>
                     </div>
-
 
                     <div className="col-span-6 sm:col-span-6 lg:col-span-6">
                       <label
@@ -127,6 +134,9 @@ export default function FormHTML() {
                   <button
                     type="submit"
                     className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                    }}
                   >
                     Save
                   </button>
