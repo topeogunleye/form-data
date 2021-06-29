@@ -180,15 +180,15 @@ export default function FormHTML() {
 
                     <div className="col-span-6 sm:col-span-6 lg:col-span-2">
                       <label
-                        htmlFor="number"
+                        htmlFor="phone"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Phone Number
                       </label>
                       <input
-                        type="number"
-                        name="number"
-                        id="number"
+                        type="tel"
+                        name="phone"
+                        id="phone"
                         className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
