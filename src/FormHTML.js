@@ -31,12 +31,13 @@ export default function FormHTML() {
                 Personal Information
               </h3>
               <p className="mt-1 text-sm text-gray-600">
-              This information will be displayed publicly so be careful what you share.
+                This information will be displayed publicly so be careful what
+                you share.
               </p>
             </div>
           </div>
           <div className="mt-5 md:mt-0 md:col-span-2">
-            <form action="#" method="POST">
+            <form action="POST" method="POST" data-netlify="true">
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 py-5 bg-white sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
@@ -98,7 +99,7 @@ export default function FormHTML() {
                       <div className="mt-1">
                         <textarea
                           id="about"
-                          name="about"
+                          name="profession"
                           rows={3}
                           className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                           placeholder="Engineer, Doctor, Lawyer"
@@ -106,11 +107,9 @@ export default function FormHTML() {
                         />
                       </div>
                       <p className="mt-2 text-sm text-gray-500">
-                        Comma seperated list of your skills. URLs are
-                        hyperlinked.
+                        Your Profession.
                       </p>
                     </div>
-
 
                     <div className="col-span-6 sm:col-span-6 lg:col-span-6">
                       <label
@@ -122,7 +121,7 @@ export default function FormHTML() {
                       <div className="mt-1">
                         <textarea
                           id="about"
-                          name="about"
+                          name="skills"
                           rows={3}
                           className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                           placeholder="copy writing, teaching"
@@ -135,6 +134,9 @@ export default function FormHTML() {
                       </p>
                     </div>
                   </div>
+                </div>
+                <div className="field">
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                   <button
