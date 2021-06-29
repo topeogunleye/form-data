@@ -82,7 +82,7 @@ export default function FormHTML() {
                         htmlFor="country"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        State
+                        State of Origin
                       </label>
                       <select
                         id="country"
