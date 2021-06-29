@@ -96,6 +96,8 @@ export default function FormHTML() {
                         <option>Osun</option>
                         <option>Ekiti</option>
                         <option>Ondo</option>
+                        <option>Kwara</option>
+                        <option>Kogi</option>
                       </select>
                     </div>
 
