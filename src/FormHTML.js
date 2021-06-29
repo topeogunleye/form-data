@@ -22,7 +22,7 @@ export default function FormHTML() {
           </div>
           <div className="mt-5 md:mt-0 md:col-span-2">
             <form
-              action="https://formsubmit.co/topeogunleye1@gmail.com"
+              action="https://formsubmit.co/0fc4c020d672df348f7e37ae30afda1e"
               method="POST"
               data-netlify="true"
             >
